@@ -1,123 +1,194 @@
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing:border-box;
+}
+body {
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+/* Utility */
+.wrapper {
+  width: 50%;
+  margin: 0 auto;
+}
+.mid_wrapper {
+  width: 25%;
+  margin: 0 auto;
+}
+.large_wrapper {
+  width: 60%;
+  margin: 0 auto;
+}
+header {
+  color: white;
+}
+.star {
+  width: 20%;
+  margin: 0 auto;
+}
+.padding_top_standard {
+  padding-top: 60px;
+}
+.padding_bottom_standard {
+  padding-bottom: 60px;
+}
 
+h1 {
+  font-size: 400%;
+  font-weight: bold;
+}
+h2 {
+  font-size: 300%;
+  font-weight: bold;
+}
+h3 {
+  font-size: 120%;
+  font-weight: bold;
+}
+/* Fine Utility */
 /* Navbar */
 .navbar {
   background-color: #2C3E50;
-  height: 80px;
-  font-size: 16px;
   font-weight: bold;
-  margin-bottom: 0;
-  padding-bottom: 0;
-  border: none;
-  border-radius: 0;
+  border:none;
 }
-.navbar-default .navbar-brand {
+
+.navbar.navbar-default a {
   color: white;
-  font-size: 20px;
 }
-.navbar-default .navbar-nav>li>a {
+.navbar-default .navbar-nav>li>a{
   color: white;
+}
+
+.nav>li>a:focus, .nav>li>a:hover {
+  color: #1ABC9C;
 }
 
 #navbar_80 {
-  width: 80%;
-  margin-top: 15px;
+  height: 100px;
+ width: 70%;
+ margin: 0 auto;
+ padding-top: 25px;
 }
 /* Fine Navbar */
-/* Start */
-#start {
-  height: 70vh;
+/* Jumbotron */
+#ms_jumbotron {
+  margin-top: 100px;
   background-color: #1ABC9C;
+  height: 700px;
+  color: white;
 }
-/* Fine Start */
+#ms_jumbotron img {
+  width: 250px;
+}
+#ms_jumbotron .fas {
+  font-size: 200%;
+  color: white;
+}
+#ms_jumbotron hr {
+  border-top: 4px solid #FFFF;
+}
+/* Fine Jumbotron */
 /* Portfolio */
-#portfolio {
-
+#portfolio .fas {
+  font-size: 200%;
+  color: #2C3E50;
 }
-.portfolio_title {
-  height: 20vh;
-  background: white;
-  text-align: center;
+#portfolio hr {
+  border-top: 4px solid #2C3E50;
 }
-.portfolio_quadri .quadri{
-  margin-top: 20px;
-  width: 90%;
+.content {
   margin: 0 auto;
-}
-
-#red {
-  background: red;
-  height: 40vh;
-}
-#turquoise {
-  background: turquoise;
-  height: 40vh;
-}
-#black {
-  background: black;
-  height: 40vh;
-}
-.portfolio_quadri_content {
-  background: lightgrey;
-  height: 100%;
   padding: 20px;
+}
+.content img {
+  width: 100%;
+  border-radius: 20px;
 }
 /* Fine Portfolio */
 /* Inizio About */
-.about {
-  width: 100%;
-  height: 50vh;
-  background: #1ABC9C;
+#about {
+  background-color: #1ABC9C;
   color: white;
-  text-align: center;
 }
-.about .about_text {
-  text-align: left;
-  width: 50%;
-  margin: 0 auto;
+#about .fas.fa-star {
+  font-size: 200%;
+  color: white;
 }
-.text {
-  margin-top: 20px;
+#about hr {
+  border-top: 4px solid #FFFF;
 }
-.button {
-  margin-top: 30px;
+#about p {
+  padding: 20px;
+  font-size: 120%;
+}
+#about button {
+  background-color: transparent;
+  border-radius: 10px;
+  border: 2px solid white;
+  padding: 20px 30px;
+}
+#about .fas.fa-download {
+  margin-right: 20px;
 }
 /* Fine About */
 /* Contact */
-.contact {
-  height: 80vh;
-  text-align: center;
-  background: white;
+#contact .fas.fa-star {
+  font-size: 200%;
+  color: #2C3E50;
 }
-.contact_title {
-  height: 20vh;
+#star {
+  border-top: 4px solid #2C3E50;
 }
-.contact_form {
-  width: 50%;
-  height: 50vh;
-  margin: 0 auto;
-  background: black;
+#contact input {
+  font-size: 130%;
+  border: none;
+  padding: 30px 0;
+}
+#contact .form-control {
+  box-shadow: none;
+}
+.separate_form  {
+  margin-top: 50px;
+}
+.separate_form_bottom {
+  margin-top: 200px;
+}
+.btn-green {
+  color: #fff;
+    background-color:  #1ABC9C;
+    padding: 20px 30px;
 }
 /* Fine Contact */
 /* Footer */
-.footer_top {
-  background: yellow;
-  height: 30vh;
+footer {
+  color: white;
+  font-size: 130%;
 }
-.footer_bottom {
-  background: black;
-  height: 10vh;
+
+footer p {
+  padding: 0 20px;
 }
-.footer_top .footer_text {
-  height: 100%;
-  width: 80%;
-  margin: 0 auto;
+#footer_top {
+  background-color: #2C3E50;
 }
-#location,
-#web,
-#freelancer {
-  background: grey;
-  padding: 5px;
-  height: 100%;
+#footer_top .fab {
+border: 2px solid white;
+border-radius: 100%;
+padding: 15px 15px;
+margin: 15px 3px;
+}
+.green-text {
+  color: #1ABC9C;
+}
+#footer_bottom {
+  background-color: #1a252f;
+}
+#footer_bottom h6 {
+  padding: 20px 0;
 }
 /* Fine Footer */
